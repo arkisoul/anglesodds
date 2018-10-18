@@ -22,21 +22,26 @@
     <!-- Add your site or application content here -->
     <!-- Header -->
     <header class="header">
+        <div class="header-logo--container container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt="Angle & Odds Logo"></a>
+        </div>
         <!-- Top Bar -->
         <div class="top-bar">
             <div class="container">
                 <div class="top-bar--container">
                     <a href="#" class="btn btn-link">LOGIN</a>
                     <a href="#" class="btn btn-brand">REGISTER</a>
-                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                    <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <div class="d-inline-block nav-social">
+                        <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- ./ Top Bar -->
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-md navbar-light bg-light navbar-main">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt="Angle & Odds Logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main"
@@ -45,19 +50,18 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbar-main">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">NLF</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">MLB</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="NBAnavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 NBA
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu" aria-labelledby="NBAnavbarDropdown">
                                 <a class="dropdown-item" href="#">Carrier</a>
                                 <a class="dropdown-item" href="#">Scores</a>
                                 <a class="dropdown-item" href="#">Live Commentaries</a>
@@ -74,12 +78,24 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">NHL</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="btn btn-brand" href="#">FORUM</a>
+                        </li>
                     </ul>
                 </div>
-                <a class="btn btn-brand" href="#">FORUM</a>
+                <div class="dropdown-menu" aria-labelledby="NBAnavbarDropdown">
+                    <a class="dropdown-item" href="#">Carrier</a>
+                    <a class="dropdown-item" href="#">Scores</a>
+                    <a class="dropdown-item" href="#">Live Commentaries</a>
+                    <a class="dropdown-item" href="#">Schedule</a>
+                    <a class="dropdown-item" href="#">Standings</a>
+                </div>
             </div>
         </nav>
         <!-- ./ Navigation -->
+    </header>
+    <!-- ./ Header -->
+    <section class="header-carousel">
         <!-- Carousel -->
         <div id="carousel-main" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -90,10 +106,12 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100" src="img/bg_12.jpg" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2>WE LOVE</h2>
-                        <h4>AMERICAN <span>FOOTBALL</span></h4>
-                        <p>Don't walk through life just playing football. Don't walk through life just being an
+                    <div class="carousel-caption carousel-caption--right">
+                        <div class="carousel-caption--head">
+                            <h2>WE LOVE</h2>
+                            <h4>AMERICAN <span class="text-secondary">FOOTBALL</span></h4>
+                        </div>
+                        <p class="carousel--text">Don't walk through life just playing football. Don't walk through life just being an
                             athlete. Athletics will fade.
                             Character and integrity and really making an impact on someone's life, that's the ultimate
                             vision, that's the ultimate goal - bottom line.</p>
@@ -102,9 +120,31 @@
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="img/bg_12.jpg" alt="Second slide">
+                    <div class="carousel-caption carousel-caption--center">
+                        <div class="carousel-caption--head">
+                            <h2>WE LOVE</h2>
+                            <h4>AMERICAN <span class="text-secondary">FOOTBALL</span></h4>
+                        </div>
+                        <p class="carousel--text">Don't walk through life just playing football. Don't walk through life just being an
+                            athlete. Athletics will fade.
+                            Character and integrity and really making an impact on someone's life, that's the ultimate
+                            vision, that's the ultimate goal - bottom line.</p>
+                        <a href="#" class="btn btn-ghost">Join the Team</a>
+                    </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="img/bg_12.jpg" alt="Third slide">
+                    <div class="carousel-caption carousel-caption--left">
+                        <div class="carousel-caption--head">
+                            <h2>WE LOVE</h2>
+                            <h4>AMERICAN <span class="text-secondary">FOOTBALL</span></h4>
+                        </div>
+                        <p class="carousel--text">Don't walk through life just playing football. Don't walk through life just being an
+                            athlete. Athletics will fade.
+                            Character and integrity and really making an impact on someone's life, that's the ultimate
+                            vision, that's the ultimate goal - bottom line.</p>
+                        <a href="#" class="btn btn-ghost">Join the Team</a>
+                    </div>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carousel-main" role="button" data-slide="prev">
@@ -117,12 +157,11 @@
             </a>
         </div>
         <!-- ./ Carousel -->
-    </header>
-    <!-- ./ Header -->
+    </section>
     <!-- Banner -->
-    <section class="banner my-4">
-        <div class="container text-center px-5">
-            <a href="#" class="d-block"><img src="img/aside_top.jpg" alt="Banner" class="img-fluid" width="90%"></a>
+    <section class="banner py-4">
+        <div class="container text-center px-sm-5">
+            <a href="#" class="d-block"><img src="img/aside_top.jpg" alt="Banner" class="img-fluid banner--top"></a>
         </div>
     </section>
     <!-- ./ Banner -->
@@ -136,17 +175,100 @@
                         <h1 class="block-heading">Featured News
                             <span><img src="img/flag.png" alt=""></span>
                         </h1>
-                        <div class="featured-news--container row">
-                            <div class="featured-news--item col-lg-4 col-md-6 col-sm-6">
+                        <div class="featured-news--container">
+                            <div class="featured-news--item">
                                 <div class="featured-news--head">
                                     <img src="img/featured_news_04.jpg" alt="" class="featured-news--img img-fluid">
                                 </div>
                                 <div class="featured-news--body">
-                                    <h3 class="featured-news--title">The end of Eli in NY: Time or Giants to move on from manning.</h3>
+                                    <h3 class="featured-news--title">The end of Eli in NY: Time or Giants to move on
+                                        from manning.</h3>
                                     <small class="featured-news--published">Publish on: 28/10/18</small>
                                     <p class="featured-news--brief">
-                                        Dst being aete. Athletics will fade. character and ie the ultimate vision, fade just character and integter and ie the
-                                        ultimate vision fdummy...... <a href="" class="featured-news--readmore">Read More</a>
+                                        Dst being aete. Athletics will fade. character and ie the ultimate vision, fade
+                                        just character and integter and ie the
+                                        ultimate vision fdummy...... <a href="" class="featured-news--readmore">Read
+                                            More</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="featured-news--item">
+                                <div class="featured-news--head">
+                                    <img src="img/featured_news_04.jpg" alt="" class="featured-news--img img-fluid">
+                                </div>
+                                <div class="featured-news--body">
+                                    <h3 class="featured-news--title">The end of Eli in NY: Time or Giants to move on
+                                        from manning.</h3>
+                                    <small class="featured-news--published">Publish on: 28/10/18</small>
+                                    <p class="featured-news--brief">
+                                        Dst being aete. Athletics will fade. character and ie the ultimate vision, fade
+                                        just character and integter and ie the
+                                        ultimate vision fdummy...... <a href="" class="featured-news--readmore">Read
+                                            More</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="featured-news--item">
+                                <div class="featured-news--head">
+                                    <img src="img/featured_news_04.jpg" alt="" class="featured-news--img img-fluid">
+                                </div>
+                                <div class="featured-news--body">
+                                    <h3 class="featured-news--title">The end of Eli in NY: Time or Giants to move on
+                                        from manning.</h3>
+                                    <small class="featured-news--published">Publish on: 28/10/18</small>
+                                    <p class="featured-news--brief">
+                                        Dst being aete. Athletics will fade. character and ie the ultimate vision, fade
+                                        just character and integter and ie the
+                                        ultimate vision fdummy...... <a href="" class="featured-news--readmore">Read
+                                            More</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="featured-news--item">
+                                <div class="featured-news--head">
+                                    <img src="img/featured_news_04.jpg" alt="" class="featured-news--img img-fluid">
+                                </div>
+                                <div class="featured-news--body">
+                                    <h3 class="featured-news--title">The end of Eli in NY: Time or Giants to move on
+                                        from manning.</h3>
+                                    <small class="featured-news--published">Publish on: 28/10/18</small>
+                                    <p class="featured-news--brief">
+                                        Dst being aete. Athletics will fade. character and ie the ultimate vision, fade
+                                        just character and integter and ie the
+                                        ultimate vision fdummy...... <a href="" class="featured-news--readmore">Read
+                                            More</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="featured-news--item">
+                                <div class="featured-news--head">
+                                    <img src="img/featured_news_04.jpg" alt="" class="featured-news--img img-fluid">
+                                </div>
+                                <div class="featured-news--body">
+                                    <h3 class="featured-news--title">The end of Eli in NY: Time or Giants to move on
+                                        from manning.</h3>
+                                    <small class="featured-news--published">Publish on: 28/10/18</small>
+                                    <p class="featured-news--brief">
+                                        Dst being aete. Athletics will fade. character and ie the ultimate vision, fade
+                                        just character and integter and ie the
+                                        ultimate vision fdummy...... <a href="" class="featured-news--readmore">Read
+                                            More</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="featured-news--item">
+                                <div class="featured-news--head">
+                                    <img src="img/featured_news_04.jpg" alt="" class="featured-news--img img-fluid">
+                                </div>
+                                <div class="featured-news--body">
+                                    <h3 class="featured-news--title">The end of Eli in NY: Time or Giants to move on
+                                        from manning.</h3>
+                                    <small class="featured-news--published">Publish on: 28/10/18</small>
+                                    <p class="featured-news--brief">
+                                        Dst being aete. Athletics will fade. character and ie the ultimate vision, fade
+                                        just character and integter and ie the
+                                        ultimate vision fdummy...... <a href="" class="featured-news--readmore">Read
+                                            More</a>
                                     </p>
                                 </div>
                             </div>
@@ -157,8 +279,8 @@
                     </div>
                     <!-- ./ Featured News -->
                     <!-- Banner -->
-                    <section class="banner my-4">
-                        <a href="#" class="d-block"><img src="img/aside_top.jpg" alt="Banner" class="img-fluid" width="90%"></a>
+                    <section class="banner py-4 text-center">
+                        <a href="#" class="d-block"><img src="img/aside_top.jpg" alt="Banner" class="img-fluid" width="100%"></a>
                     </section>
                     <!-- ./ Banner -->
                     <!-- MLB News -->
@@ -166,13 +288,64 @@
                         <h1 class="block-heading">MLB News
                             <span><img src="img/flag.png" alt=""></span>
                         </h1>
-                        <div class="mlb-news--container row">
-                            <div class="mlb-news--item col-md-6">
+                        <div class="mlb-news--container">
+                            <div class="mlb-news--item">
                                 <div class="mlb-news--left">
                                     <img src="img/mlb_news_01.jpg" alt="" class="mlb-news--img img-fluid">
                                 </div>
                                 <div class="mlb-news--right">
-                                    <h3 class="mlb-news--title">The end of Eli in NY: Time or Giants to move on from manning.</h3>
+                                    <h3 class="mlb-news--title">The end of Eli in NY: Time or Giants to move on from
+                                        manning.</h3>
+                                    <small class="mlb-news--published">Publish on: 28/10/18</small>
+                                </div>
+                            </div>
+                            <div class="mlb-news--item">
+                                <div class="mlb-news--left">
+                                    <img src="img/mlb_news_01.jpg" alt="" class="mlb-news--img img-fluid">
+                                </div>
+                                <div class="mlb-news--right">
+                                    <h3 class="mlb-news--title">The end of Eli in NY: Time or Giants to move on from
+                                        manning.</h3>
+                                    <small class="mlb-news--published">Publish on: 28/10/18</small>
+                                </div>
+                            </div>
+                            <div class="mlb-news--item">
+                                <div class="mlb-news--left">
+                                    <img src="img/mlb_news_01.jpg" alt="" class="mlb-news--img img-fluid">
+                                </div>
+                                <div class="mlb-news--right">
+                                    <h3 class="mlb-news--title">The end of Eli in NY: Time or Giants to move on from
+                                        manning.</h3>
+                                    <small class="mlb-news--published">Publish on: 28/10/18</small>
+                                </div>
+                            </div>
+                            <div class="mlb-news--item">
+                                <div class="mlb-news--left">
+                                    <img src="img/mlb_news_01.jpg" alt="" class="mlb-news--img img-fluid">
+                                </div>
+                                <div class="mlb-news--right">
+                                    <h3 class="mlb-news--title">The end of Eli in NY: Time or Giants to move on from
+                                        manning.</h3>
+                                    <small class="mlb-news--published">Publish on: 28/10/18</small>
+                                </div>
+                            </div>
+                            <div class="mlb-news--item">
+                                <div class="mlb-news--left">
+                                    <img src="img/mlb_news_01.jpg" alt="" class="mlb-news--img img-fluid">
+                                </div>
+                                <div class="mlb-news--right">
+                                    <h3 class="mlb-news--title">The end of Eli in NY: Time or Giants to move on from
+                                        manning.</h3>
+                                    <small class="mlb-news--published">Publish on: 28/10/18</small>
+                                </div>
+                            </div>
+                            <div class="mlb-news--item">
+                                <div class="mlb-news--left">
+                                    <img src="img/mlb_news_01.jpg" alt="" class="mlb-news--img img-fluid">
+                                </div>
+                                <div class="mlb-news--right">
+                                    <h3 class="mlb-news--title">The end of Eli in NY: Time or Giants to move on from
+                                        manning.</h3>
                                     <small class="mlb-news--published">Publish on: 28/10/18</small>
                                 </div>
                             </div>
@@ -190,11 +363,72 @@
                         <div class="latest-forum--container">
                             <div class="latest-forum--item">
                                 <div class="latest-forum--head">
-                                    <h3 class="latest-forum--title">The end of Eli in NY: Time or Giants to move on from manning.</h3>
-                                    <small class="latest-forum--published">Publish on: 28/10/18</small>
+                                    <h3 class="latest-forum--title">The end of Eli in NY: Time or Giants to move on
+                                        from manning.</h3>
+                                    <p class="latest-forum--published">
+                                        <small><i class="fa fa-eye"></i> 120 Views</small>
+                                        <small><i class="fa fa-calendar"></i> 28/10/18</small>
+                                    </p>
                                 </div>
                                 <div class="latest-forum--body">
-                                    <p class="latest-forum--brief">The end of Eli in NY: Time or Giants to move on from manning. The end of Eli in NY: Time or Giants</p>
+                                    <p class="latest-forum--brief">The end of Eli in NY: Time or Giants to move on from
+                                        manning. The end of Eli in NY: Time or Giants</p>
+                                </div>
+                            </div>
+                            <div class="latest-forum--item">
+                                <div class="latest-forum--head">
+                                    <h3 class="latest-forum--title">The end of Eli in NY: Time or Giants to move on
+                                        from manning.</h3>
+                                    <p class="latest-forum--published">
+                                        <small><i class="fa fa-eye"></i> 120 Views</small>
+                                        <small><i class="fa fa-calendar"></i> 28/10/18</small>
+                                    </p>
+                                </div>
+                                <div class="latest-forum--body">
+                                    <p class="latest-forum--brief">The end of Eli in NY: Time or Giants to move on from
+                                        manning. The end of Eli in NY: Time or Giants</p>
+                                </div>
+                            </div>
+                            <div class="latest-forum--item">
+                                <div class="latest-forum--head">
+                                    <h3 class="latest-forum--title">The end of Eli in NY: Time or Giants to move on
+                                        from manning.</h3>
+                                    <p class="latest-forum--published">
+                                        <small><i class="fa fa-eye"></i> 120 Views</small>
+                                        <small><i class="fa fa-calendar"></i> 28/10/18</small>
+                                    </p>
+                                </div>
+                                <div class="latest-forum--body">
+                                    <p class="latest-forum--brief">The end of Eli in NY: Time or Giants to move on from
+                                        manning. The end of Eli in NY: Time or Giants</p>
+                                </div>
+                            </div>
+                            <div class="latest-forum--item">
+                                <div class="latest-forum--head">
+                                    <h3 class="latest-forum--title">The end of Eli in NY: Time or Giants to move on
+                                        from manning.</h3>
+                                    <p class="latest-forum--published">
+                                        <small><i class="fa fa-eye"></i> 120 Views</small>
+                                        <small><i class="fa fa-calendar"></i> 28/10/18</small>
+                                    </p>
+                                </div>
+                                <div class="latest-forum--body">
+                                    <p class="latest-forum--brief">The end of Eli in NY: Time or Giants to move on from
+                                        manning. The end of Eli in NY: Time or Giants</p>
+                                </div>
+                            </div>
+                            <div class="latest-forum--item">
+                                <div class="latest-forum--head">
+                                    <h3 class="latest-forum--title">The end of Eli in NY: Time or Giants to move on
+                                        from manning.</h3>
+                                    <p class="latest-forum--published">
+                                        <small><i class="fa fa-eye"></i> 120 Views</small>
+                                        <small><i class="fa fa-calendar"></i> 28/10/18</small>
+                                    </p>
+                                </div>
+                                <div class="latest-forum--body">
+                                    <p class="latest-forum--brief">The end of Eli in NY: Time or Giants to move on from
+                                        manning. The end of Eli in NY: Time or Giants</p>
                                 </div>
                             </div>
                         </div>
@@ -215,14 +449,44 @@
                             <h1 class="aside-heading">Related News</h1>
                             <div class="related-news--container">
                                 <div class="related-news--item">
-                                    <p class="related-news--title">
+                                    <h3 class="related-news--title">
                                         The end of Eli in NY: Time or Giants to
                                         move on from manning.
-                                    </p>
+                                    </h3>
                                     <small class="related-news--published">
                                         Publish on: 28/10/18
                                     </small>
                                 </div>
+                                <div class="related-news--item">
+                                    <h3 class="related-news--title">
+                                        The end of Eli in NY: Time or Giants to
+                                        move on from manning.
+                                    </h3>
+                                    <small class="related-news--published">
+                                        Publish on: 28/10/18
+                                    </small>
+                                </div>
+                                <div class="related-news--item">
+                                    <h3 class="related-news--title">
+                                        The end of Eli in NY: Time or Giants to
+                                        move on from manning.
+                                    </h3>
+                                    <small class="related-news--published">
+                                        Publish on: 28/10/18
+                                    </small>
+                                </div>
+                                <div class="related-news--item">
+                                    <h3 class="related-news--title">
+                                        The end of Eli in NY: Time or Giants to
+                                        move on from manning.
+                                    </h3>
+                                    <small class="related-news--published">
+                                        Publish on: 28/10/18
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="block--foot">
+                                <a href="#" class="btn btn-brand">View More</a>
                             </div>
                         </div>
                         <div class="right-banners">
@@ -231,6 +495,27 @@
                         <div class="upcoming-fixture">
                             <h1 class="aside-heading">Upcoming Fixture</h1>
                             <div class="upcoming-fixture--container">
+                                <div class="upcoming-fixture--item">
+                                    <div class="upcoming-fixture--team">
+                                        <img src="img/germany.png" alt="Germany"> Germany
+                                    </div>
+                                    <div class="upcoming-fixture--divider">Vs</div>
+                                    <div class="upcoming-fixture--team"><img src="img/france.png" alt=""> France</div>
+                                </div>
+                                <div class="upcoming-fixture--item">
+                                    <div class="upcoming-fixture--team">
+                                        <img src="img/germany.png" alt="Germany"> Germany
+                                    </div>
+                                    <div class="upcoming-fixture--divider">Vs</div>
+                                    <div class="upcoming-fixture--team"><img src="img/france.png" alt=""> France</div>
+                                </div>
+                                <div class="upcoming-fixture--item">
+                                    <div class="upcoming-fixture--team">
+                                        <img src="img/germany.png" alt="Germany"> Germany
+                                    </div>
+                                    <div class="upcoming-fixture--divider">Vs</div>
+                                    <div class="upcoming-fixture--team"><img src="img/france.png" alt=""> France</div>
+                                </div>
                                 <div class="upcoming-fixture--item">
                                     <div class="upcoming-fixture--team">
                                         <img src="img/germany.png" alt="Germany"> Germany
@@ -249,16 +534,18 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <img src="img/footer_logo.svg" alt="Angles & Odds Logo">
-            <nav class="nav footer-nav">
-                <a class="nav-link" href="#">Home</a>
-                <a class="nav-link" href="#">About</a>
-                <a class="nav-link" href="#">Contact Us</a>
-                <a class="nav-link" href="#">Forums</a>
-                <a class="nav-link" href="#">Terms &amp; Conditions</a>
-                <a class="nav-link" href="#">Privacy Policy</a>
-            </nav>
-            <small class="copyright-note">&copy; Copyright 2018 Angles &amp; Odds</small>
+            <div class="footer--inner">
+                <img src="img/footer_logo.svg" alt="Angles & Odds Logo" class="footer--logo">
+                <nav class="nav footer--nav">
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#">Forums</a>
+                    <a class="nav-link" href="#">Terms &amp; Conditions</a>
+                    <a class="nav-link" href="#">Privacy Policy</a>
+                </nav>
+                <small class="copyright-note">&copy; Copyright 2018 Angles &amp; Odds</small>
+            </div>
         </div>
     </footer>
     <!-- ./ Footer -->

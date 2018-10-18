@@ -1,0 +1,40 @@
+.footer
+    width: 100%
+    background-color: $bg-black
+
+.footer--inner
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+
+.footer--logo
+    width: 80px
+    height: 68px
+
+.footer--nav
+    width: 100%
+    order: 1
+    display: flex
+    justify-content: center
+
+    @media (min-width: 900px)
+        order: 0
+        width: auto
+        justify-content: flex-start
+        margin-left: 1em
+
+    .nav-link
+        @include font($secondary-font, $medium)
+        transition: all ease-in 350ms
+        font-size: 0.75rem
+        color: $text-white
+
+        &:hover, &:focus, &:active
+            color: $text-offwhite
+
+.copyright-note
+    @include font($secondary-font, $medium)
+    margin: 0 0 0 auto
+    font-size: 0.65rem
+    color: $text-grey

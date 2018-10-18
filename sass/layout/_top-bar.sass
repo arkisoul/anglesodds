@@ -1,0 +1,36 @@
+.top-bar
+    width: 100%
+    background-color: $bg-black
+    padding: 0.5em 0
+
+.top-bar--container
+    text-align: right
+
+    .btn-link
+        color: $text-white
+        transition: all ease-in 350ms
+        text-decoration: none
+
+        &:hover, &:focus
+            color: $text-white
+            transform: translateY(-4px)
+            text-decoration: none
+
+.nav-social
+    margin-left: 1em
+
+    a > i.fa
+        display: inline-block
+        color: $text-white
+        font-size: 0.9rem
+        width: 32px
+        height: 32px
+        line-height: 32px
+        text-align: center
+        border-radius: 50%
+        transition: all ease-in 350ms
+
+        &:hover, &:focus
+            box-shadow: 0 0 10px rgba(255,255,255,0.8)
+            z-index: 1
+            transform: translateY(-1px)

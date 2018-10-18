@@ -1,0 +1,73 @@
+.featured-news
+    background-color: $bg-white
+    border-radius: 10px
+    padding: 1.5em 1em
+
+.featured-news--container
+    margin-left: 0
+    margin-right: 0
+    display: flex
+    flex-wrap: wrap
+
+.featured-news--item
+    display: flex
+    flex-direction: column
+    background-color: $bg-white
+    box-shadow: 0 0 10px rgba(0,0,0,0.16)
+    padding: 0
+    border-radius: 4px
+    transition: all ease-in 350ms
+    transform-style: preserve-3d
+    flex: 0 0 100%
+    margin-bottom: 1em
+
+    @media (min-width: 480px)
+        flex: 0 0 calc(50% - 1em)
+        margin: 0.5em
+
+    @media (min-width: 1024px)
+        flex: 0 0 calc(33.33% - 1em)
+        margin: 0.5em
+
+    &:hover, &:focus
+        transform: perspective(1000px) translateY(-4px)
+        z-index: 11
+        cursor: pointer
+        box-shadow: 0 5px 10px rgba(0,0,0,.3)
+
+.featured-news--head
+    height: auto
+
+.featured-news--body
+    height: auto
+    padding: 0.5em
+
+.featured-news--img
+    width: 100%
+
+.featured-news--title
+    font-weight: $semi
+    font-size: 0.9rem
+    margin-top: 0
+    margin-bottom: 0em
+    color: $text-offblack
+
+.featured-news--published
+    font-size: 0.7rem
+    margin: 0
+    color: $text-offwhite
+
+.featured-news--brief
+    font-weight: $regular
+    font-size: 0.8rem
+    margin-bottom: 0
+    text-align: justify
+
+.featured-news--readmore
+    color: $text-main
+    font-weight: $semi
+    text-decoration: none
+
+    &:hover, &:focus
+        color: $text-main
+        text-decoration: none

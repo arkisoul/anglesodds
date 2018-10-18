@@ -1,0 +1,71 @@
+.latest-forum
+    background-color: $bg-white
+    border-radius: 10px
+    padding: 1.5em 1em
+    margin-bottom: 2em
+
+.latest-forum--container
+    display: flex
+    flex-direction: column
+
+.latest-forum--item
+    padding: 0.5em
+    background-color: $bg-white
+    box-shadow: 0 0 10px rgba(0,0,0,0.16)
+    border-radius: 4px
+    transition: all ease-in 350ms
+    transform-style: preserve-3d
+    margin-bottom: 1em
+
+    &:hover, &:focus
+        transform: perspective(1000px) translateY(-4px)
+        z-index: 11
+        cursor: pointer
+        box-shadow: 0 5px 10px rgba(0,0,0,.3)
+
+.latest-forum--head
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    margin-bottom: 0.5em
+
+.latest-forum--title
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    font-weight: $semi
+    font-size: 0.9rem
+    margin-top: 0
+    margin-bottom: 0em
+    color: $text-offblack
+    width: 100%
+    margin-bottom: 0.5em
+
+    @media (min-width: 480px)
+        width: 65%
+        margin-bottom: 0
+
+.latest-forum--published
+    font-size: 0.7rem
+    margin: 0
+    color: $text-offwhite
+    text-align: left
+
+    small
+        font-size: 0.7rem
+        margin: 0
+        color: $text-offwhite
+
+        &:not(:last-child)
+            margin-right: 0.5em
+
+    i.fa
+        color: $text-main
+        margin-right: 0.5em
+
+.latest-forum--brief
+    font-weight: $regular
+    font-size: 0.8rem
+    margin-bottom: 0
+    text-align: left

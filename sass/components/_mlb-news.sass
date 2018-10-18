@@ -1,0 +1,55 @@
+.mlb-news
+    background-color: $bg-white
+    border-radius: 10px
+    padding: 1.5em 1em
+    margin-bottom: 1em
+
+.mlb-news--container
+    display: flex
+    flex-wrap: wrap
+
+.mlb-news--item
+    display: flex
+    background-color: $bg-white
+    box-shadow: 0 0 10px rgba(0,0,0,0.16)
+    padding: 0
+    border-radius: 4px
+    transition: all ease-in 350ms
+    transform-style: preserve-3d
+    flex: 0 0 100%
+    margin-bottom: 1em
+
+    @media (min-width: 1024px)
+        flex: 0 0 calc(50% - 1em)
+        margin: 0.5em
+
+    &:hover, &:focus
+        transform: perspective(1000px) translateY(-4px)
+        z-index: 11
+        cursor: pointer
+        box-shadow: 0 5px 10px rgba(0,0,0,.3)
+
+.mlb-news--left
+    width: 100%
+
+    @media (min-width: 480px)
+        width: 25%
+
+.mlb-news--right
+    width: 100%
+    padding: 0.75em
+
+    @media (min-width: 480px)
+        width: 75%
+
+.mlb-news--title
+    font-weight: $semi
+    font-size: 0.9rem
+    margin-top: 0
+    margin-bottom: 0em
+    color: $text-offblack
+
+.mlb-news--published
+    font-size: 0.7rem
+    margin: 0
+    color: $text-offwhite

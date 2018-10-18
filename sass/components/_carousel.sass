@@ -1,0 +1,102 @@
+#carousel-main
+    height: calc(100vh - 110px)
+
+    .carousel-inner
+        height: calc(100vh - 110px)
+
+        .carousel-item
+            height: calc(100vh - 110px)
+
+            img
+                height: calc(100vh - 110px)
+
+.carousel-indicators
+    width: 100px
+    margin-left: auto
+    margin-right: auto
+
+    &::before
+        content: ''
+        background-image: url('../img/next-arrow.svg')
+        background-size: cover
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+        width: 5px
+        height: 10px
+
+    &::after
+        content: ''
+        background-image: url('../img/prev-arrow.svg')
+        background-size: cover
+        position: absolute
+        top: 50%
+        right: 0
+        transform: translateY(-50%)
+        width: 5px
+        height: 10px
+
+.carousel-indicators li
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    background-color: $bg-grey
+
+.carousel-control-prev-icon
+    background-image: url('../img/prev-arrow.svg')
+
+.carousel-control-next-icon
+    background-image: url('../img/next-arrow.svg')
+
+.carousel-caption--left,
+.carousel-caption--right,
+.carousel-caption--center
+    display: none
+    @media (min-width: 768px)
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+.carousel-caption--right
+    left: auto
+    right: 15%
+    width: 40%
+    top: 10%
+    bottom: 10%
+    text-align: right
+    align-items: flex-end
+
+    .carousel-caption--head
+        transform: translateX(30px)
+
+.carousel-caption--left
+    left: 15%
+    right: auto
+    width: 40%
+    top: 10%
+    bottom: 10%
+    text-align: left
+    align-items: flex-start
+
+    .carousel-caption--head
+        transform: translateX(-30px)
+
+.carousel-caption--center
+    left: 15%
+    right: 15%
+    width: 40%
+    top: 10%
+    bottom: 10%
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    align-items: center
+
+.carousel-caption--head
+    margin-bottom: 2em
+
+.carousel--text
+    font-size: 0.9rem
+    font-weight: $regular
+    margin-bottom: 2em

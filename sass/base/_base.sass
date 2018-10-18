@@ -1,3 +1,16 @@
 body
     @include font($primary-font, $regular)
     font-size: 100%
+
+.container
+    max-width: 100%
+
+    @media (min-width: 768px)
+        max-width: 90%
+
+.main-content
+    background-color: $bg-offwhite
+
+.block--foot
+    text-align: center
+    padding-top: 1.2em
