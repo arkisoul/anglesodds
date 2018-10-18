@@ -1,12 +1,12 @@
 .latest-forum
-    background-color: $bg-white
-    border-radius: 10px
-    padding: 1.5em 1em
+    // background-color: $bg-white
+    // border-radius: 10px
+    // padding: 1.5em 1em
     margin-bottom: 2em
 
 .latest-forum--container
     display: flex
-    flex-direction: column
+    flex-wrap: wrap
 
 .latest-forum--item
     padding: 0.5em
@@ -15,7 +15,18 @@
     border-radius: 4px
     transition: all ease-in 350ms
     transform-style: preserve-3d
-    margin-bottom: 1em
+    flex: 0 0 100%
+    margin-bottom: 1px
+
+    @media (min-width: 480px) and (max-width: 767px)
+        flex: 0 0 calc(50% - 1em)
+        max-width: calc(50% - 1em)
+        margin: 0 0.5em
+
+    @media (min-width: 1024px)
+        flex: 0 0 calc(50% - 1em)
+        max-width: calc(50% - 1em)
+        margin: 0 0.5em
 
     &:hover, &:focus
         transform: perspective(1000px) translateY(-4px)
@@ -42,10 +53,6 @@
     width: 100%
     margin-bottom: 0.5em
 
-    @media (min-width: 480px)
-        width: 65%
-        margin-bottom: 0
-
 .latest-forum--published
     font-size: 0.7rem
     margin: 0
@@ -63,6 +70,9 @@
     i.fa
         color: $text-main
         margin-right: 0.5em
+
+.latest-forum--body
+    display: none
 
 .latest-forum--brief
     font-weight: $regular

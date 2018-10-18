@@ -1,7 +1,7 @@
 .mlb-news
-    background-color: $bg-white
-    border-radius: 10px
-    padding: 1.5em 1em
+    // background-color: $bg-white
+    // border-radius: 10px
+    // padding: 1.5em 1em
     margin-bottom: 1em
 
 .mlb-news--container
@@ -19,8 +19,14 @@
     flex: 0 0 100%
     margin-bottom: 1em
 
+    @media (min-width: 480px) and (max-width: 767px)
+        flex: 0 0 calc(50% - 1em)
+        max-width: calc(50% - 1em)
+        margin: 0.5em
+
     @media (min-width: 1024px)
         flex: 0 0 calc(50% - 1em)
+        max-width: calc(50% - 1em)
         margin: 0.5em
 
     &:hover, &:focus
@@ -38,6 +44,10 @@
 .mlb-news--right
     width: 100%
     padding: 0.75em
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
 
     @media (min-width: 480px)
         width: 75%
