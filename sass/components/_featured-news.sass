@@ -1,4 +1,5 @@
 .featured-news
+    margin-bottom: 1em
     // background-color: $bg-white
     // border-radius: 10px
     // padding: 1.5em 1em
@@ -24,12 +25,12 @@
     @media (min-width: 480px)
         flex: 0 0 calc(50% - 1em)
         max-width: calc(50% - 1em)
-        margin: 0.5em
+        margin: 0 0.5em 1em
 
     @media (min-width: 1024px)
         flex: 0 0 calc(33.33% - 1em)
         max-width: calc(33.33% - 1em)
-        margin: 0.5em
+        margin: 0 0.5em 1em
 
     &:hover, &:focus
         transform: perspective(1000px) translateY(-4px)
@@ -38,14 +39,14 @@
         box-shadow: 0 5px 10px rgba(0,0,0,.3)
 
 .featured-news--head
-    height: auto
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $bg-offwhite
 
 .featured-news--body
     height: auto
     padding: 0.5em
-
-.featured-news--img
-    width: 100%
 
 .featured-news--title
     font-weight: $semi
