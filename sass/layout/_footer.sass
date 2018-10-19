@@ -7,10 +7,14 @@
     display: flex
     align-items: center
     flex-wrap: wrap
+    padding: 0.5em 0
 
 .footer--logo
-    width: 80px
-    height: 68px
+    width: 60px
+    height: 51px
+
+    @media (min-width: 900px)
+        margin-right: 1em
 
 .footer--nav
     width: 100%
@@ -22,7 +26,6 @@
         order: 0
         width: auto
         justify-content: flex-start
-        margin-left: 1em
 
     .nav-link
         @include font($secondary-font, $medium)
