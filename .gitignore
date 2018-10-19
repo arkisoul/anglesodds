@@ -72,5 +72,10 @@ bh_unicode_properties.cache
 # https://packagecontrol.io/packages/sublime-github
 GitHub.sublime-settings
 
+# Compressed Bundles
+*.zip
+*.rar
+*.tar
+*.tar.gz
 
 # End of https://www.gitignore.io/api/sass,macos,prepros,sublimetext
