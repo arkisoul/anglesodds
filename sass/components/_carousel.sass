@@ -1,14 +1,14 @@
-#carousel-main
-    height: calc(100vh - 200px)
+// #carousel-main
+//     height: calc(100vh - 200px)
 
-    .carousel-inner
-        height: calc(100vh - 200px)
+//     .carousel-inner
+//         height: calc(100vh - 200px)
 
-        .carousel-item
-            height: calc(100vh - 200px)
+//         .carousel-item
+//             height: calc(100vh - 200px)
 
-            img
-                height: calc(100vh - 200px)
+//             img
+//                 height: calc(100vh - 200px)
 
 .carousel-indicators
     width: 100px
@@ -53,17 +53,30 @@
 .carousel-caption--right,
 .carousel-caption--center
     display: none
+    width: 75%
+    top: 8%
+    bottom: 8%
+
     @media (min-width: 768px)
-        display: flex
-        flex-direction: column
-        justify-content: space-between
+        display: block
+        top: 10%
+        bottom: 10%
+
+    @media (min-width: 1440px)
+        top: 15%
+        bottom: 15%
+        margin: auto
+        width: 40%
+
+    @media (min-width: 1920px)
+        top: 20%
+        bottom: 20%
+        margin: auto
+        width: 40%
 
 .carousel-caption--right
     left: auto
     right: 15%
-    width: 40%
-    top: 10%
-    bottom: 10%
     text-align: right
     align-items: flex-end
 
@@ -73,9 +86,6 @@
 .carousel-caption--left
     left: 15%
     right: auto
-    width: 40%
-    top: 10%
-    bottom: 10%
     text-align: left
     align-items: flex-start
 
@@ -85,18 +95,47 @@
 .carousel-caption--center
     left: 15%
     right: 15%
-    width: 40%
-    top: 10%
-    bottom: 10%
     margin-left: auto
     margin-right: auto
     text-align: center
     align-items: center
 
 .carousel-caption--head
-    margin-bottom: 2em
+    margin-bottom: 1em
+
+    @media (min-width: 992px)
+        margin-bottom: 2em
 
 .carousel--text
-    font-size: 0.9rem
+    font-size: 0.85rem
     font-weight: $regular
-    margin-bottom: 2em
+    margin-bottom: 1em
+
+    @media (min-width: 992px)
+        margin-bottom: 2em
+
+    @media (min-width: 1440px)
+        font-size: 1.2rem
+
+    @media (min-width: 1920px)
+        font-size: 1.5rem
+
+.carousel-caption--title
+    font-size: 1.5rem
+    margin-bottom: 0.5em
+
+    @media (min-width: 1440px)
+        font-size: 2.5rem
+
+    @media (min-width: 1920px)
+        font-size: 3rem
+
+.carousel-caption--subtitle
+    font-size: 1.15rem
+    margin: 0
+
+    @media (min-width: 1440px)
+        font-size: 2rem
+
+    @media (min-width: 1920px)
+        font-size: 2.5rem

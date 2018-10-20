@@ -1,0 +1,91 @@
+.forum-list
+    background-color: $bg-white
+    border-radius: 4px
+    margin-bottom: 2em
+
+.forum-list--head
+    background-color: $bg-white
+    border-radius: 4px 4px 0 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 1em 1.25em
+    border-bottom: 1px solid $border-dark
+
+.forum-list--heading
+    font-size: 1.5rem
+    margin: 0
+    color: $text-main
+
+    @media (min-width: 768px)
+        font-size: 2rem
+
+.forum-list--container
+    background-color: $bg-white
+
+.forum--item
+    background-color: $bg-white
+    padding: 1em 1.25em
+    &:not(:last-child)
+        border-bottom: 1px solid $border-genral
+
+.forum--title
+    font-weight: $semi
+    font-size: 1.1rem
+    margin-top: 0
+    color: $text-offblack
+    margin-bottom: 0.5em
+
+.forum--meta
+    margin: 0
+
+    small
+        font-size: 0.9rem
+        color: $text-offwhite
+        font-weight: $regular
+
+        &:not(:last-child)
+            margin-right: 2em
+
+    i.fa
+        font-size: 1rem
+        color: $text-main
+        margin-right: 0.5em
+
+.related-forum
+    background-color: $bg-white
+    border-radius: 4px
+    padding: 1.5em 1em
+    margin-bottom: 2em
+
+.related-forum--container
+    display: flex
+    flex-direction: column
+
+.related-forum--item
+    padding: 0.5em 0
+    &:not(:last-child)
+        border-bottom: 1px solid $border-genral
+
+.related-forum--title
+    font-size: 0.9rem
+    margin-top: 0
+    margin-bottom: 0em
+    color: $text-offblack
+    font-weight: $semi
+
+.related-forum--meta
+    margin: 0
+
+    small
+        font-size: 0.75rem
+        color: $text-offwhite
+        font-weight: $regular
+
+        &:not(:last-child)
+            margin-right: 1.25em
+
+    i.fa
+        font-size: 0.9rem
+        color: $text-main
+        margin-right: 0.35em

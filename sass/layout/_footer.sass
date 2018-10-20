@@ -12,32 +12,37 @@
 .footer--logo
     width: 60px
     height: 51px
+    display: none
 
     @media (min-width: 900px)
         margin-right: 1em
 
 .footer--nav
     width: 100%
-    order: 1
     display: flex
     justify-content: center
 
-    @media (min-width: 900px)
-        order: 0
+    @media (min-width: 800px)
         width: auto
         justify-content: flex-start
 
     .nav-link
-        @include font($secondary-font, $medium)
+        font-weight: $medium
         transition: all ease-in 350ms
-        font-size: 0.75rem
+        font-size: 0.9rem
         color: $text-white
 
         &:hover, &:focus, &:active
             color: $text-offwhite
 
 .copyright-note
-    @include font($secondary-font, $medium)
+    width: 100%
+    font-weight: $medium
     margin: 0 0 0 auto
-    font-size: 0.65rem
+    font-size: 0.8rem
     color: $text-grey
+    text-align: center
+
+    @media (min-width: 800px)
+        width: auto
+        text-align: right

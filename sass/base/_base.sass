@@ -4,10 +4,22 @@ body
     background-color: $bg-offwhite
 
 .container
-    max-width: 100%
+    width: 100%
+
+    @media (min-width: 576px)
+        max-width: 90%
 
     @media (min-width: 768px)
         max-width: 90%
+
+    @media (min-width: 992px)
+        max-width: 90%
+
+    @media (min-width: 1200px)
+        max-width: 90%
+
+    @media (min-width: 1920px)
+        max-width: 1800px
 
 .main-content
     background-color: $bg-offwhite
@@ -15,6 +27,7 @@ body
 .block--foot
     text-align: center
     padding-top: 1.2em
+    padding-bottom: 1.2em
 
 .dropdown-toggle:after
     content: '\f107'

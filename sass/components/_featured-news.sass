@@ -20,17 +20,18 @@
     transition: all ease-in 350ms
     transform-style: preserve-3d
     flex: 0 0 100%
+    max-width: 100%
     margin-bottom: 1em
 
     @media (min-width: 480px)
-        flex: 0 0 calc(50% - 1em)
-        max-width: calc(50% - 1em)
-        margin: 0 0.5em 1em
+        flex: 0 0 calc(50% - 2em)
+        max-width: calc(50% - 2em)
+        margin: 0 1em 1.5em
 
     @media (min-width: 1024px)
-        flex: 0 0 calc(33.33% - 1em)
-        max-width: calc(33.33% - 1em)
-        margin: 0 0.5em 1em
+        flex: 0 0 calc(33.33% - 2em)
+        max-width: calc(33.33% - 2em)
+        margin: 0 1em 1.5em
 
     &:hover, &:focus
         transform: perspective(1000px) translateY(-4px)
@@ -42,29 +43,52 @@
     display: flex
     justify-content: center
     align-items: center
-    background-color: $bg-offwhite
+    background-color: $bg-lightgrey
+    border-radius: 4px 4px 0 0
+
+.featured-news--img
+    border-radius: 4px 4px 0 0
 
 .featured-news--body
     height: auto
-    padding: 0.5em
+    padding: 0.75em
 
 .featured-news--title
     font-weight: $semi
     font-size: 0.9rem
     margin-top: 0
-    margin-bottom: 0em
+    margin-bottom: 0.35em
     color: $text-offblack
+
+    @media (min-width: 992px)
+        font-size: 1.05rem
+
+    @media (min-width: 1440px)
+        font-size: 1.15rem
 
 .featured-news--published
     font-size: 0.7rem
     margin: 0
     color: $text-offwhite
 
+    @media (min-width: 992px)
+        font-size: 0.8rem
+
+    @media (min-width: 992px)
+        font-size: 0.9rem
+
 .featured-news--brief
     font-weight: $regular
     font-size: 0.8rem
     margin-bottom: 0
     text-align: justify
+    margin-top: 0.45em
+
+    @media (min-width: 992px)
+        font-size: 0.9rem
+
+    @media (min-width: 992px)
+        font-size: 0.95rem
 
 .featured-news--readmore
     color: $text-main
