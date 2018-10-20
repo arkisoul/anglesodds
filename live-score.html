@@ -29,7 +29,7 @@
     <meta name="theme-color" content="#ffffff">
     <!-- ./ Favicons -->
 
-    <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -109,7 +109,7 @@
     </header>
     <!-- ./ Header -->
     <!-- Banner -->
-    <section class="banner mt-3 py-4">
+    <section class="banner mt-5 py-4">
         <div class="container text-center">
             <a href="#" class="d-block"><img src="img/aside_top.jpg" alt="Banner" class="img-fluid banner--top"></a>
         </div>
@@ -144,8 +144,8 @@
                                     <p class="score-table--head-right">Final Match</p>
                                 </div>
                                 <div class="score-table--body">
-                                    <table class="table table-responsive score--table">
-                                        <thead>
+                                    <table class="table table-responsive-lg score--table">
+                                        <tbody>
                                             <tr>
                                                 <th scope="col">Team Name</th>
                                                 <th scope="col">1<sup>st</sup> Qr</th>
@@ -154,9 +154,15 @@
                                                 <th scope="col">4<sup>th</sup> Qr</th>
                                                 <th scope="col">Over Time</th>
                                                 <th scope="col">Total Score</th>
+                                                <th scope="col" rowspan="3">
+                                                    <div class="score-table--actions">
+                                                        <button class="btn btn-brand btn-conversation" data-target="conv-01">Game Cast <i class="fa fa-angle-down"></i></button>
+                                                        <button class="btn btn-brand">Conversation</button>
+                                                        <button type="button" class="btn btn-link text-main px-0" data-toggle="modal" data-target="#teamDescModal">Bet On
+                                                            This Game</button>
+                                                    </div>
+                                                </th>
                                             </tr>
-                                        </thead>
-                                        <tbody>
                                             <tr>
                                                 <th scope="row"><img src="img/team-icon.png" alt="" class="team--icon"> <span class="text-secondary">Lorem Ipsum Green Bay Packers</span></th>
                                                 <td>30</td>
@@ -177,21 +183,6 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <div class="score-table--actions">
-                                        <div class="dropdown">
-                                            <button class="btn btn-brand dropdown-toggle btn-block" type="button" id="gameCastDropdown-01" data-toggle="dropdown"
-                                                aria-haspopup="true" aria-expanded="false">
-                                                Game Cast
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="gameCastDropdown-01">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                            </div>
-                                        </div>
-                                        <button class="btn btn-brand btn-conversation" data-target="conv-01">Conversation</button>
-                                        <button type="button" class="btn btn-link text-main px-0" data-toggle="modal" data-target="#teamDescModal">Bet On This Game</button>
-                                    </div>
                                 </div>
                                 <div class="score-table--expand" id="conv-01">
                                     <table class="table table-responsive score--table">
@@ -241,8 +232,8 @@
                                     <p class="score-table--head-right">Final Match</p>
                                 </div>
                                 <div class="score-table--body">
-                                    <table class="table table-responsive score--table">
-                                        <thead>
+                                    <table class="table table-responsive-lg score--table">
+                                        <tbody>
                                             <tr>
                                                 <th scope="col">Team Name</th>
                                                 <th scope="col">1<sup>st</sup> Qr</th>
@@ -251,9 +242,15 @@
                                                 <th scope="col">4<sup>th</sup> Qr</th>
                                                 <th scope="col">Over Time</th>
                                                 <th scope="col">Total Score</th>
+                                                <th scope="col" rowspan="3">
+                                                    <div class="score-table--actions">
+                                                        <button class="btn btn-brand btn-conversation" data-target="conv-02">Game Cast <i class="fa fa-angle-down"></i></button>
+                                                        <button class="btn btn-brand">Conversation</button>
+                                                        <button type="button" class="btn btn-link text-main px-0" data-toggle="modal" data-target="#teamDescModal">Bet On
+                                                            This Game</button>
+                                                    </div>
+                                                </th>
                                             </tr>
-                                        </thead>
-                                        <tbody>
                                             <tr>
                                                 <th scope="row"><img src="img/team-icon.png" alt="" class="team--icon"> <span class="text-secondary">Lorem Ipsum Green Bay Packers</span></th>
                                                 <td>30</td>
@@ -274,21 +271,6 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <div class="score-table--actions">
-                                        <div class="dropdown">
-                                            <button class="btn btn-brand dropdown-toggle btn-block" type="button" id="gameCastDropdown-02" data-toggle="dropdown"
-                                                aria-haspopup="true" aria-expanded="false">
-                                                Game Cast
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="gameCastDropdown-02">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                            </div>
-                                        </div>
-                                        <button class="btn btn-brand btn-conversation" data-target="conv-02">Conversation</button>
-                                        <button type="button" class="btn btn-link text-main px-0" data-toggle="modal" data-target="#teamDescModal">Bet On This Game</button>
-                                    </div>
                                 </div>
                                 <div class="score-table--expand" id="conv-02">
                                     <table class="table table-responsive score--table">
@@ -338,8 +320,8 @@
                                     <p class="score-table--head-right">Final Match</p>
                                 </div>
                                 <div class="score-table--body">
-                                    <table class="table table-responsive score--table">
-                                        <thead>
+                                    <table class="table table-responsive-lg score--table">
+                                        <tbody>
                                             <tr>
                                                 <th scope="col">Team Name</th>
                                                 <th scope="col">1<sup>st</sup> Qr</th>
@@ -348,9 +330,15 @@
                                                 <th scope="col">4<sup>th</sup> Qr</th>
                                                 <th scope="col">Over Time</th>
                                                 <th scope="col">Total Score</th>
+                                                <th scope="col" rowspan="3">
+                                                    <div class="score-table--actions">
+                                                        <button class="btn btn-brand btn-conversation" data-target="conv-03">Game Cast <i class="fa fa-angle-down"></i></button>
+                                                        <button class="btn btn-brand">Conversation</button>
+                                                        <button type="button" class="btn btn-link text-main px-0" data-toggle="modal" data-target="#teamDescModal">Bet On
+                                                            This Game</button>
+                                                    </div>
+                                                </th>
                                             </tr>
-                                        </thead>
-                                        <tbody>
                                             <tr>
                                                 <th scope="row"><img src="img/team-icon.png" alt="" class="team--icon"> <span class="text-secondary">Lorem Ipsum Green Bay Packers</span></th>
                                                 <td>30</td>
@@ -371,21 +359,6 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <div class="score-table--actions">
-                                        <div class="dropdown">
-                                            <button class="btn btn-brand dropdown-toggle btn-block" type="button" id="gameCastDropdown-03" data-toggle="dropdown"
-                                                aria-haspopup="true" aria-expanded="false">
-                                                Game Cast
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="gameCastDropdown-03">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                            </div>
-                                        </div>
-                                        <button class="btn btn-brand btn-conversation" data-target="conv-03">Conversation</button>
-                                        <button type="button" class="btn btn-link text-main px-0" data-toggle="modal" data-target="#teamDescModal">Bet On This Game</button>
-                                    </div>
                                 </div>
                                 <div class="score-table--expand" id="conv-03">
                                     <table class="table table-responsive score--table">
@@ -435,8 +408,8 @@
                                     <p class="score-table--head-right">Final Match</p>
                                 </div>
                                 <div class="score-table--body">
-                                    <table class="table table-responsive score--table">
-                                        <thead>
+                                    <table class="table table-responsive-lg score--table">
+                                        <tbody>
                                             <tr>
                                                 <th scope="col">Team Name</th>
                                                 <th scope="col">1<sup>st</sup> Qr</th>
@@ -445,9 +418,15 @@
                                                 <th scope="col">4<sup>th</sup> Qr</th>
                                                 <th scope="col">Over Time</th>
                                                 <th scope="col">Total Score</th>
+                                                <th scope="col" rowspan="3">
+                                                    <div class="score-table--actions">
+                                                        <button class="btn btn-brand btn-conversation" data-target="conv-04">Game Cast <i class="fa fa-angle-down"></i></button>
+                                                        <button class="btn btn-brand">Conversation</button>
+                                                        <button type="button" class="btn btn-link text-main px-0" data-toggle="modal" data-target="#teamDescModal">Bet On
+                                                            This Game</button>
+                                                    </div>
+                                                </th>
                                             </tr>
-                                        </thead>
-                                        <tbody>
                                             <tr>
                                                 <th scope="row"><img src="img/team-icon.png" alt="" class="team--icon"> <span class="text-secondary">Lorem Ipsum Green Bay Packers</span></th>
                                                 <td>30</td>
@@ -468,120 +447,8 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <div class="score-table--actions">
-                                        <div class="dropdown">
-                                            <button class="btn btn-brand dropdown-toggle btn-block" type="button" id="gameCastDropdown-04" data-toggle="dropdown"
-                                                aria-haspopup="true" aria-expanded="false">
-                                                Game Cast
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="gameCastDropdown-04">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                            </div>
-                                        </div>
-                                        <button class="btn btn-brand btn-conversation" data-target="conv-04">Conversation</button>
-                                        <button type="button" class="btn btn-link text-main px-0" data-toggle="modal" data-target="#teamDescModal">Bet On This Game</button>
-                                    </div>
                                 </div>
                                 <div class="score-table--expand" id="conv-04">
-                                    <table class="table table-responsive score--table">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">Name</th>
-                                                <th scope="col">Play Minutes</th>
-                                                <th scope="col">Local Score</th>
-                                                <th scope="col">Away Score</th>
-                                                <th scope="col">Type</th>
-                                                <th scope="col">Yards</th>
-                                                <th scope="col">Penalty</th>
-                                                <th scope="col">Description</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row" class="text-secondary">New York Giants</th>
-                                                <td>0:45</td>
-                                                <td>0</td>
-                                                <td>0</td>
-                                                <td>FUMBLE REC</td>
-                                                <td>8</td>
-                                                <td>False</td>
-                                                <td>Elliott kicks 66 yards from PHI 35 to... <a href="" class="read-more--btn">Read More</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" class="text-main">Philadelphia Eagles</th>
-                                                <td>0:45</td>
-                                                <td>0</td>
-                                                <td>0</td>
-                                                <td>FUMBLE REC</td>
-                                                <td>8</td>
-                                                <td>False</td>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="score-tables--item">
-                                <div class="score-table--head">
-                                    <p class="score-table--head-left">
-                                        <span class="mr-3">Date: 20/10/18</span>
-                                        <span>Time: 11:00 AM</span>
-                                    </p>
-                                    <p class="score-table--head-right">Final Match</p>
-                                </div>
-                                <div class="score-table--body">
-                                    <table class="table table-responsive score--table">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">Team Name</th>
-                                                <th scope="col">1<sup>st</sup> Qr</th>
-                                                <th scope="col">2<sup>nd</sup> Qr</th>
-                                                <th scope="col">3<sup>rd</sup> Qr</th>
-                                                <th scope="col">4<sup>th</sup> Qr</th>
-                                                <th scope="col">Over Time</th>
-                                                <th scope="col">Total Score</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row"><img src="img/team-icon.png" alt="" class="team--icon"> <span class="text-secondary">Lorem Ipsum Green Bay Packers</span></th>
-                                                <td>30</td>
-                                                <td>40</td>
-                                                <td>60</td>
-                                                <td>0</td>
-                                                <td>0</td>
-                                                <td>130</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row"><img src="img/team-icon.png" alt="" class="team--icon"> <span class="text-main">San Francisco 49ers Lorem Ipsum</span></th>
-                                                <td>30</td>
-                                                <td>40</td>
-                                                <td>60</td>
-                                                <td>0</td>
-                                                <td>0</td>
-                                                <td>130</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <div class="score-table--actions">
-                                        <div class="dropdown">
-                                            <button class="btn btn-brand dropdown-toggle btn-block" type="button" id="gameCastDropdown-05" data-toggle="dropdown"
-                                                aria-haspopup="true" aria-expanded="false">
-                                                Game Cast
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="gameCastDropdown-05">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                            </div>
-                                        </div>
-                                        <button class="btn btn-brand btn-conversation" data-target="conv-05">Conversation</button>
-                                        <button type="button" class="btn btn-link text-main px-0" data-toggle="modal" data-target="#teamDescModal">Bet On This Game</button>
-                                    </div>
-                                </div>
-                                <div class="score-table--expand" id="conv-05">
                                     <table class="table table-responsive score--table">
                                         <thead>
                                             <tr>
@@ -818,7 +685,7 @@
     <!-- ./ Footer -->
     <!-- Modal -->
     <div class="modal fade ao-modal" id="teamDescModal" tabindex="-1" role="dialog" aria-labelledby="teamDescModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="teamDescModalLabel">Team Score Description</h5>
@@ -835,10 +702,10 @@
         </div>
     </div>
     <script src="js/vendor/modernizr.min.js"></script>
-    <script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>

@@ -4,30 +4,33 @@
     // padding: 1.5em 1em
     margin-bottom: 2em
 
+.latest-forum--block
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
 .latest-forum--container
     display: flex
     flex-wrap: wrap
+    padding: 0.5em 0 0
+    background-color: $bg-white
+    flex: 0 0 100%
+    max-width: 100%
+
+    @media (min-width: 1024px)
+        flex: 0 0 calc(50% - 1em)
+        max-width: calc(50% - 1em)
+        margin: 0 0.5em
 
 .latest-forum--item
-    padding: 0.75em
+    padding: 0.75em 1em
     background-color: $bg-white
     // border-radius: 4px
     transition: all ease-in 350ms
     transform-style: preserve-3d
     flex: 0 0 100%
     max-width: 100%
-    margin-bottom: 1px
     border-bottom: 1px solid $border-genral
-
-    @media (min-width: 480px) and (max-width: 767px)
-        flex: 0 0 calc(50% - 1em)
-        max-width: calc(50% - 1em)
-        margin: 0 0.5em
-
-    @media (min-width: 1024px)
-        flex: 0 0 calc(50% - 1em)
-        max-width: calc(50% - 1em)
-        margin: 0 0.5em
 
     &:hover, &:focus
         // transform: perspective(1000px) translateY(-4px)
