@@ -18,4 +18,11 @@ $(document).ready(function () {
         $(s).stop(true, true).slideUp(200)
         $('#' + t).stop(true, true).slideToggle(400)
     })
+
+    $('.fp--comment-reply').on('click', function(e) {
+        e.preventDefault()
+        var html = '<div class="fp--comment-response"><form action=""><div class="fp--comment-response-block"><img src="img/avatar.jpeg" alt="User" class="fp--comment-user-img"><div class="form-group"><label for="commentReply" class="sr-only">Write your reply</label><input class="form-control" id="commentReply" type="text" placeholder="Write your reply here"></div><input type="submit" value="Send" class="btn btn-brand"></div></form></div>'
+        var parent = $(this).parent('.fp--comment-meta')
+        $(html).insertAfter(parent)
+    })
 })

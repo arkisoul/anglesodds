@@ -1,0 +1,315 @@
+.fp--main
+    background-color: $bg-white
+    padding: 1.25em 2em
+    border-radius: 4px
+    margin-bottom: 2em
+
+.fp--title
+    font-size: 1.1rem
+    margin-bottom: 1.2em
+    color: $text-offblack
+    font-weight: $semi
+
+    @media (min-width: 992px)
+        font-size: 1.2rem
+
+.fp--content
+    font-size: 0.9rem
+    color: $text-offblack
+    margin-bottom: 1.1em
+    text-align: justify
+    line-height: 1.6
+    font-weight: $regular
+
+    @media (min-width: 992px)
+        font-size: 1rem
+        padding-right: 10%
+
+    @media (min-width: 1200px)
+        font-size: 1rem
+        padding-right: 15%
+
+.fp--meta
+    display: flex
+    align-items: center
+
+    span
+        font-size: 0.9rem
+        color: $text-offwhite
+        font-weight: $regular
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        @media (min-width: 480px)
+            display: initial
+
+        @media (min-width: 992px)
+            font-size: 1rem
+
+        &:not(:last-child)
+            margin-right: 1em
+
+    i.fa
+        font-size: 1rem
+        color: $text-main
+        margin-right: 0.5em
+
+.fp--share-bot
+    padding-top: 1.25em
+    padding-left: 2em
+    display: flex
+    align-items: center
+    border-top: 1px solid $border-genral
+    margin: 0 -2em
+
+.share--icon
+    width: 39px
+    height: 36px
+    border-radius: 5px
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    color: $text-white
+    font-size: 1rem
+    margin-left: 0.3rem
+
+    &:first-child
+        margin-left: 1.25em
+
+        @media (min-width: 480px)
+            margin-left: 2.5em
+
+    &.icon--send
+        background-color: $bg-main
+
+    &.icon--fb
+        background-color: $bg-fb
+
+    &.icon--twitter
+        background-color: $bg-twitter
+
+    &.icon--link
+        background-color: $bg-link
+
+    &:hover, &:focus
+        text-decoration: none
+        color: $text-white
+
+    @media (min-width: 480px)
+        margin-left: 0.75rem
+
+    i.fa
+        font-size: 1.2rem
+
+.fp--new-comment
+    background-color: $bg-white
+    margin-bottom: 2em
+    border-radius: 4px
+
+.fp--heading
+    font-size: 1.1rem
+    padding: 1em
+    color: $text-main
+    font-weight: $semi
+    text-align: center
+    border-bottom: 1px solid $border-genral
+
+    @media (min-width: 992px)
+        font-size: 1.2rem
+
+.fp--nc-form
+    padding: 1.25em 2em
+
+    @media (min-width: 992px)
+        padding: 1.25em 10%
+
+    @media (min-width: 1200px)
+        padding: 1.25em 15%
+
+textarea.form-control,
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number']
+    border: 1px solid $border-genral
+    border-radius: 0
+
+textarea.form-control::placeholder,
+input[type='text']::placeholder,
+input[type='email']::placeholder,
+input[type='password']::placeholder,
+input[type='number']::placeholder
+    font-size: 0.9rem
+    color: $text-offwhite
+    @include font($primary-font, $regular)
+    letter-spacing: 1px
+
+.fp--user-comments
+    background-color: $bg-white
+    margin-bottom: 2em
+    border-radius: 4px
+
+.fp--comment-item
+    display: flex
+    padding: 1.25em 2em
+
+    &:not(:last-child)
+        border-bottom: 1px solid $border-genral
+
+.fp--comment-item-left
+    flex: 0 0 50px
+    max-width: 50px
+
+    @media (min-width: 992px)
+        flex: 0 0 60px
+        max-width: 60px
+
+    @media (min-width: 1200px)
+        flex: 0 0 70px
+        max-width: 70px
+
+.fp--comment-user-img
+    width: 36px
+    height: 36px
+    border-radius: 50%
+    margin: auto
+    margin-left: 0
+    object-fit: cover
+
+    @media (min-width: 992px)
+        width: 46px
+        height: 46px
+
+    @media (min-width: 1200px)
+        width: 56px
+        height: 56px
+
+.fp--comment-item-right
+        flex: 0 0 calc(100% - 50px)
+    max-width: calc(100% - 50px)
+    overflow: hidden
+
+    @media (min-width: 992px)
+        flex: 0 0 calc(100% - 60px)
+        max-width: calc(100% - 60px)
+
+    @media (min-width: 1200px)
+        flex: 0 0 calc(100% - 70px)
+        max-width: calc(100% - 70px)
+
+    .fp--comment-item
+        padding-left: 0
+        padding-right: 0
+        margin-top: 0.5em
+        flex-direction: column
+
+        @media (min-width: 480px)
+            flex-direction: row
+
+        .fp--comment-item-left
+            align-self: center
+            width: 100%
+            text-align: center
+
+            @media (min-width: 480px)
+                align-self: initial
+                width: auto
+                text-align: initial
+
+        .fp--comment-item-right
+            flex: 0 0 100%
+            max-width: 100%
+
+            @media (min-width: 480px)
+                flex: 0 0 calc(100% - 50px)
+
+            @media (min-width: 992px)
+                flex: 0 0 calc(100% - 60px)
+                max-width: calc(100% - 60px)
+
+            @media (min-width: 1200px)
+                flex: 0 0 calc(100% - 70px)
+                max-width: calc(100% - 70px)
+
+.fp--comment-username
+    font-size: 1rem
+    margin: 0 0 0.8em
+    font-weight: $semi
+    color: $text-main
+
+.fp--comment-comment
+    font-size: 1rem
+    margin: 0 0 0.8em
+    font-weight: $regular
+    color: $text-offblack
+    line-height: 1.6
+    text-align: justify
+
+    @media (min-width: 992px)
+        padding-right: 10%
+
+    @media (min-width: 1200px)
+        padding-right: 15%
+
+.fp--comment-meta
+    margin: 0
+
+    a
+        text-decoration: none
+        font-size: 0.95rem
+        color: $text-offwhite
+        &:not(:last-child)
+            margin-right: 1rem
+
+        &:hover, &:focus
+            text-decoration: none
+
+    i.fa
+        font-size: 1.1rem
+        color: $text-main
+        margin-right: 0.5em
+
+    img
+        width: 18px
+        margin-top: -2px
+        margin-right: 0.5em
+
+.fp--comment-response
+    padding: 1.25em 0
+
+.fp--comment-response-block
+    display: flex
+    flex-direction: column
+    align-items: center
+    overflow: hidden
+
+    @media (min-width: 480px)
+        flex-direction: row
+
+    .fp--comment-user-img
+        margin: 0 auto 0.75em
+
+        @media (min-width: 480px)
+            margin-right: 0.75em
+            margin-bottom: 0
+            margin-left: 0
+
+    .form-group
+        flex: 0 0 100%
+        max-width: 100%
+        width: 100%
+        margin-bottom: 0.75em
+
+        @media (min-width: 480px)
+            margin-right: 0.75em
+            margin-bottom: 0
+            flex: 0 0 calc(100% - 120px)
+            max-width: calc(100% - 120px)
+
+        @media (min-width: 992px)
+            flex: 0 0 calc(100% - 150px)
+            max-width: calc(100% - 150px)
+
+        @media (min-width: 1200px)
+            max-width: 400px
