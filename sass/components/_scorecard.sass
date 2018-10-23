@@ -62,12 +62,14 @@
         tr
             td, th
                 color: $text-lightgrey
+                padding: 0.5em 0.75rem
+                line-height: 1.2
     tr
         td, th
             font-weight: $regular
             font-size: 0.9rem
             vertical-align: middle
-            border: 1px solid $border-genral
+            border: 1px solid $border-lightgrey
             color: $text-offblack
 
             &:not(:first-child)
@@ -78,23 +80,49 @@
 
 .score-table--expand
     background-color: $bg-white
-    margin-top: 2em
+    margin-top: 3em
     position: relative
     display: none
 
     &::before
-        content: '\f103'
+        content: ''
         position: absolute
         font-family: 'FontAwesome'
-        top: -2em
+        font-size: 20px
+        top: -3em
         left: 50%
         transform: translate(-50%, -4px)
         display: inline-flex
-        width: 28px
-        height: 28px
+        width: 36px
+        height: 36px
         justify-content: center
         align-items: center
         background-color: $bg-white
+        background-image: url('../img/double-angle-down.png')
+        background-repeat: no-repeat
+        background-position: center center
         border-radius: 50%
-        color: $text-offblack
+        color: $text-main
+        font-weight: $regular
         box-shadow: 0 5px 10px rgba(0,0,0,0.16)
+
+    .score--table
+        thead
+            tr
+                td, th
+                    font-weight: $semi
+                    color: $text-main
+
+                    &:first-child
+                        width: 18%
+
+                    &:last-child
+                        width: 25%
+
+        tbody
+            tr
+                td, th
+                    font-weight: $regular
+
+                    &:last-child
+                        text-align: left

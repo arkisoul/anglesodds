@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+
     $('.navbar-nav li .dropdown-menu .dropdown-item').on('click', function (e) {
         $(this).addClass('active').siblings('.dropdown-item').removeClass('active');
         // $(this).parent('.dropdown-menu').addClass('show');
@@ -25,4 +27,25 @@ $(document).ready(function () {
         var parent = $(this).parent('.fp--comment-meta')
         $(html).insertAfter(parent)
     })
+
+    $('#addKeyword').on('keypress', function(e) {
+        if(e.keyCode !== 13) {
+            return
+        }
+        e.preventDefault()
+        var val = e.target.value
+        var html = '<span class="cf--keyword"><a class="cf--keyword-remove" onclick="removeKeyword(this)">&times;</a>' + val + '</span>'
+        $(this).siblings('.cf--keywords-container').append(html)
+        $(this).val('')
+    })
+
+    $('.cf--keyword-remove').on('click', function(e) {
+        e.preventDefault()
+        $(this).parent('.cf--keyword').remove()
+    })
 })
+
+function removeKeyword(_this) {
+    // console.log('this', _this);
+    $(_this).parent('.cf--keyword').remove()
+}

@@ -132,20 +132,66 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-9 col-md-8">
-                    <textarea name="content" id="editor">This is some sample content.</textarea>
-                    <script>
-                        ClassicEditor
-                            .create(document.querySelector('#editor'))
-                            .then(editor => {
-                                console.log(editor);
-                            })
-                            .catch(error => {
-                                console.error(error);
-                            });
-                    </script>
+                    <div class="create-forum">
+                        <h2 class="fp--heading">Start Your Topic</h2>
+                        <div class="create-forum--form">
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="forumTitle" class="sr-only">Write your title here</label>
+                                    <input name="forumTitle" class="form-control" id="forumTitle" type="text" placeholder="Write your title here">
+                                </div>
+                                <div class="form-group">
+                                    <label for="forumContent" class="sr-only">Write your content</label>
+                                    <textarea name="forumContent" class="form-control" rows="4" id="forumContent" rows="5" placeholder="Write your content here"></textarea>
+                                </div>
+                                <div class="form-group--btn">
+                                    <div class="form-group">
+                                        <input type="file" id="formUpload" name="formUpload">
+                                        <label for="formUpload"><img src="img/upload.png" alt=""></label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" id="formEditor" name="formEditor">
+                                        <label for="formEditor"><img src="img/editor.png" alt=""></label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" id="formWrite" name="formWrite">
+                                        <label for="formWrite"><img src="img/write.png" alt=""></label>
+                                    </div>
+                                    <input type="submit" value="Submit" class="btn btn-brand">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-xl-3 col-md-4">
                     <aside>
+                        <div class="create-form--addon">
+                            <form action="">
+                                <fieldset class="create-form--fieldset">
+                                    <legend>Select a Group <span data-toggle="tooltip" data-placement="top" title="Info tooltip"><img src="img/info-tip.png" alt=""></span></legend>
+                                    <div class="form-group">
+                                        <label for="selectCategory">Groups Related to Your Question</label>
+                                        <select class="custom-select" name="selectCategory" id="selectCategory">
+                                            <option selected>Select Category</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="create-form--fieldset">
+                                    <legend>Select Keyword <span data-toggle="tooltip" data-placement="top" title="Info tooltip"><img src="img/info-tip.png" alt=""></span></legend>
+                                    <div class="form-group">
+                                        <label for="addKeyword">Add Keyword related to your entry</label>
+                                        <input type="text" id="addKeyword" name="addKeyword" class="form-control" placeholder="Add Keyword related to your entry">
+                                        <div class="cf--keywords-container">
+                                            <span class="cf--keyword"><a class="cf--keyword-remove">&times;</a> keyword</span>
+                                            <span class="cf--keyword"><a class="cf--keyword-remove">&times;</a>blog</span>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
                     </aside>
                 </div>
             </div>
@@ -176,10 +222,21 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.ckeditor.com/ckeditor5/11.1.1/classic/ckeditor.js"></script>
+    <script src="js/vendor/ckeditor/ckeditor.js"></script>
     <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+        ClassicEditor
+            .create(document.querySelector('#forumContent'))
+            .then(editor => {
+                console.log(editor);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>

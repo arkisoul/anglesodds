@@ -313,3 +313,138 @@ input[type='number']::placeholder
 
         @media (min-width: 1200px)
             max-width: 400px
+
+// Create Forum
+.create-forum
+    background-color: $bg-white
+    border-radius: 4px
+    margin-bottom: 2em
+
+.create-forum--form
+    padding: 1.25em 2em
+
+    @media (min-width: 992px)
+        padding: 1.5em 4%
+
+    @media (min-width: 1200px)
+        padding: 2em 6%
+
+    @media (min-width: 1440px)
+        padding: 2em 10%
+
+.form-group--btn
+    display: flex
+    align-items: center
+
+    input[type='submit']
+        margin-left: auto
+        margin-right: 0
+
+    .form-group
+        margin-bottom: 0
+        position: relative
+        display: none
+        align-items: center
+        &:not(:last-child)
+            margin-right: 0.5em
+
+        input
+            position: absolute
+            width: 1px
+            height: 1px
+            left: -5000px
+
+            & ~ label
+                cursor: pointer
+                background-color: $bg-main
+                width: 37px
+                height: 35px
+                display: inline-flex
+                justify-content: center
+                align-items: center
+                border-radius: 5px
+                margin: 0
+                transition: all ease-in 350ms
+
+            &[type='checkbox'] ~ label
+                background-color: $bg-offwhite
+
+            &[type='checkbox']:checked ~ label
+                background-color: $bg-main
+
+.create-form--addon
+    background-color: $bg-white
+    border-radius: 4px
+    margin-bottom: 2em
+    padding: 1em
+
+    @media (min-width: 992px)
+        padding: 2em 1.5em
+
+.create-form--fieldset
+    legend
+        font-size: 1rem
+        color: $text-main
+        margin-bottom: 0.25em
+
+        @media (min-width: 992px)
+            font-size: 1.05rem
+
+    .form-group
+        &:not(:last-child)
+            margin-bottom: 1em
+
+        @media (min-width: 768px)
+            &:not(:last-child)
+                margin-bottom: 2em
+
+    label
+        font-size: 0.9rem
+        color: $text-offblack
+
+        @media (min-width: 992px)
+            font-size: 1rem
+
+.custom-select
+    border: 1px solid $border-genral
+    border-radius: 0
+    color: $text-offblack
+    background: none
+    background-image: url('../img/angle-down.png')
+    background-repeat: no-repeat
+    background-position: 90% center
+
+.cf--keywords-container
+    border: 1px solid $border-lightgrey
+    padding: 0.5em
+    margin-top: 1em
+
+    @media (min-width: 768px)
+        margin-top: 1.5em
+
+    .cf--keyword
+        display: inline-block
+        padding: 0.3em 0.4em
+        font-size: 0.9rem
+        background-color: $bg-main
+        color: $text-white
+        border-radius: 4px
+        margin: 0.3em
+
+    .cf--keyword-remove
+        margin-right: 4px
+        cursor: pointer
+
+// CKEditor
+.ck.ck-reset_all, .ck.ck-reset_all *
+    color: $text-offblack
+
+.ck.ck-toolbar
+    border: 1px solid $border-genral
+
+.ck.ck-editor__editable
+    border: 1px solid $border-genral
+    min-height: 100px
+
+    @media (min-width: 768px)
+        min-height: 200px
