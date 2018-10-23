@@ -1,0 +1,177 @@
+.auth-modal.ao-modal
+    .modal-dialog
+        max-width: 480px
+
+    .modal-header
+        background-image: url('../img/login-bg.jpg')
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+        flex-direction: column
+        justify-content: center
+        padding: 1.25em
+        z-index: 1
+
+        @media (min-width: 768px)
+            padding: 2em
+
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            background-image: linear-gradient(to right, $bg-main, #450D05)
+            opacity: 0.8
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+
+        .close
+            color: $text-white
+            z-index: 2
+
+    .modal-title
+        transform: initial
+        font-weight: $semi
+        font-size: 1.1rem
+        margin: 0 auto 1em
+        text-align: center
+        color: $text-white
+        z-index: 2
+
+        @media (min-width: 992px)
+            font-size: 1.2rem
+
+    .modal-subtitle
+        font-weight: $regular
+        font-size: 0.9rem
+        margin: 0 auto
+        text-align: center
+        color: $text-white
+        z-index: 2
+
+        @media (min-width: 992px)
+            font-size: 1rem
+
+    .modal-body
+        padding: 0
+
+.login-form--container
+    padding: 2em
+
+.login-form--heading
+    font-weight: $semi
+    font-size: 1.1rem
+    margin: 0 auto 1em
+    text-align: center
+    color: $text-main
+
+    @media (min-width: 992px)
+        font-size: 1.2rem
+
+.form--error
+    color: $text-main
+    padding-left: 4px
+
+.password-field-wrapper
+    position: relative
+
+    .show-password
+        position: absolute
+        display: inline-block
+        right: 1em
+        top: 50%
+        transform: translateY(-50%)
+        color: $text-grey
+        cursor: pointer
+
+.forgot-password
+    display: block
+    text-align: right
+    color: $text-offwhite
+    font-size: 0.9rem
+
+    &:hover, &:focus
+        text-decoration: none
+        color: $text-main
+
+.form--separator
+    display: block
+    width: 100%
+    margin: 1em 0
+    text-align: center
+    position: relative
+    z-index: 1
+
+    span
+        display: inline-block
+        color: $text-offwhite
+        font-weight: $regular
+
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            width: 100%
+            left: 0
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+            height: 1px
+            background-color: $bg-offwhite
+            z-index: -2
+
+        &::after
+            content: ''
+            display: inline-block
+            position: absolute
+            height: 100%
+            background-color: $bg-white
+            width: 50px
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+            z-index: -1
+
+.form--login-social
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 1em
+    width: 100%
+
+.btn-facebook
+    background-color: $bg-fb
+    color: $text-white
+    border-radius: 4px
+    padding: 0.375em 1em
+
+    &:hover, &:focus
+        color: $text-white
+
+    i.fa
+        margin-right: 4px
+
+.btn-google
+    background-color: $bg-google
+    color: $text-white
+    border-radius: 4px
+    padding: 0.375em 1em
+
+    &:hover, &:focus
+        color: $text-white
+
+    i.fa
+        margin-right: 4px
+
+.btn-noaccount
+    display: block
+    width: 100%
+    text-align: center
+    color: $text-offwhite
+    font-size: 1rem
+    font-weight: $regular
+
+    &:hover, &:focus
+        text-decoration: none
+        color: $text-main

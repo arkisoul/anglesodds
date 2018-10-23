@@ -43,6 +43,18 @@ $(document).ready(function () {
         e.preventDefault()
         $(this).parent('.cf--keyword').remove()
     })
+
+    $('.show-password').on('click', function(e) {
+        e.preventDefault()
+        var target = $(this).attr('id')
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active').find('i.fa').removeClass('fa-eye-slash').addClass('fa-eye')
+            $('input[data-describedby="' + target + '"').attr('type', 'password')
+        } else {
+            $(this).addClass('active').find('i.fa').removeClass('fa-eye').addClass('fa-eye-slash')
+            $('input[data-describedby="' + target + '"').attr('type', 'text')
+        }
+    })
 })
 
 function removeKeyword(_this) {

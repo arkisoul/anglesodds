@@ -48,8 +48,8 @@
         <div class="top-bar">
             <div class="container">
                 <div class="top-bar--container">
-                    <a href="#" class="btn btn-link">LOGIN</a>
-                    <a href="#" class="btn btn-brand">REGISTER</a>
+                    <a href="#" class="btn btn-link" data-toggle="modal" data-target="#loginModal">LOGIN</a>
+                    <a href="#" class="btn btn-brand" data-toggle="modal" data-target="#registrationModal">REGISTER</a>
                     <div class="d-inline-block nav-social">
                         <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                         <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -579,6 +579,55 @@
         </div>
     </footer>
     <!-- ./ Footer -->
+    <!-- Login Modal -->
+    <div class="modal fade ao-modal auth-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="loginModalLabel">Welcome to Angles &amp; Odds</h1>
+                    <p class="modal-subtitle">Dst being aete. Athletics will fade. character and ie the ultimate vision, fade just d integte.</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="login-form--container">
+                        <h2 class="login-form--heading">Login to your account</h2>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="userEmail" class="sr-only">Email address</label>
+                                <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" placeholder="Enter your email">
+                                <small id="emailHelp" class="form-text form--error"><img src="img/exclamanation.png" alt=""> Please enter your registered email</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="userPassword" class="sr-only">>Password</label>
+                                <div class="password-field-wrapper">
+                                    <input type="password" class="form-control" id="userPassword" placeholder="Password" data-describedby="showPassword">
+                                    <span class="show-password" id="showPassword"><i class="fa fa-eye"></i></span>
+                                </div>
+                                <a href="" class="forgot-password">Forgot Password</a>
+                            </div>
+                            <div class="form-recaptcha form-group text-center">
+                                <img src="img/recaptcha.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="form-group text-center">
+                                <input type="submit" value="Login" class="btn btn-brand">
+                            </div>
+                            <div class="form--separator"><span>OR</span></div>
+                            <div class="form--login-social">
+                                <a href="#" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+                                <a href="#" class="btn btn-google"><i class="fa fa-google-plus"></i> Google</a>
+                            </div>
+                            <a href="" class="btn-noaccount">Don't have an account</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ./ Login Modal -->
+    <!-- Registration Modal -->
+    <!-- ./ Registration Modal -->
     <script src="js/vendor/modernizr.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
