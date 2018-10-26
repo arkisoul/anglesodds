@@ -36,7 +36,6 @@ prepros-6.config
 
 ### Sass ###
 .sass-cache/
-*.css.map
 *.sass.map
 *.scss.map
 
